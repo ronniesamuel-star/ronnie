@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css" >
-   
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
 <body>
     <div id="header">
         <div class="container">
@@ -25,213 +25,206 @@
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
+            <div class="header-text" data-aos="fade-up">
                 <p>UI/UX Designer</p>
                 <h1>Hi, I'm <span>Ronnie</span><br>Samuel, a web developer dedicated to creating functional and visually appealing websites.</h1>
             </div>
         </div>
-    </div>
+    </div><div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1" data-aos="zoom-in">
+                <img src="images/ron.jpg" alt="User  Image">
+            </div>
+            <div class="About-col-2" data-aos="fade-left">
+                <h1 class="sub-title">About Me</h1>
+                <p>Website Design: Custom designs that match your brand and goals.
+                    Business Websites: Professional websites for small businesses and startups.
+                    E-commerce Websites: Fully functional online stores with payment integration.
+                    Portfolio Websites: Showcase your work in a modern and stylish way.
+                    Website Maintenance: Ongoing support to keep your website updated and secure.</p>
 
-    <!-- About section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="About-col-1">
-                    <img src="images/ron.jpg" alt="User  Image">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="About-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Website Design: Custom designs that match your brand and goals.
-                        Business Websites: Professional websites for small businesses and startups.
-                        E-commerce Websites: Fully functional online stores with payment integration.
-                        Portfolio Websites: Showcase your work in a modern and stylish way.
-                        Website Maintenance: Ongoing support to keep your website updated and secure.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2021 - current</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2019 - 2021</span><br>Team Lead at StarApp LLC</li>
-                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd</li>
-                            <li><span>2016 - 2017</span><br>Internship at Ekart E-commerce</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2016</span><br>Training at ET Institute</li>
-                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
-                            <li><span>2014</span><br>Bachelor's from ISM Bangalore</li>
-                        </ul>
-                    </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - current</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br>Team Lead at StarApp LLC</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd</li>
+                        <li><span>2016 - 2017</span><br>Internship at Ekart E-commerce</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>Training at ET Institute</li>
+                        <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                        <li><span>2014</span><br>Bachelor's from ISM Bangalore</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Services section -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-            <div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div data-aos="zoom-in">
                 <i class="fas fa-code text-2xl mb-4"></i>
                 <h2>Web Design</h2>
                 <p>1. Custom Website Design
                     Transforming Ideas into Stunning Websites
-                    I specialize in creating visually appealing and user-friendly websites tailored to your unique brand identity. Whether you need a simple landing page or a complex multi-page site, I ensure that every design element aligns with your vision and goals.
-                    
-                  </p>
+                    I specialize in creating visually appealing and user-friendly websites tailored to your unique brand identity...</p>
                 <a href="#">Learn More</a>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="200">
                 <i class="fas fa-paint-brush text-2xl mb-4"></i>
                 <h2>UI/UX DESIGN</h2>
                 <p>2. User Experience (UX) Design
-                    Crafting Intuitive Experiences
-                    User experience is at the heart of my design process. I conduct thorough research and user testing to create intuitive interfaces that enhance user satisfaction. My goal is to ensure that visitors can easily navigate your site and find the information they need..</p>
+                    Crafting Intuitive Experiences...</p>
                 <a href="#">Learn More</a>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="400">
                 <i class="fas fa-mobile-alt text-2xl mb-4"></i>
                 <h2>App Design</h2>
                 <p>3. Custom Mobile App Design
-                    Bringing Your App Ideas to Life
-                    I specialize in creating custom mobile app designs that are not only visually appealing but also user-friendly. Whether you need a native app for iOS or Android, or a cross-platform solution, I ensure that your app stands out in the crowded marketplace..</p>
+                    Bringing Your App Ideas to Life...</p>
                 <a href="#">Learn More</a>
             </div>
-                    
-                </div>
-                </div>
-                </div>
+        </div>
+    </div>
+</div>
 
-                <!--portfolio section-->
-                
-             <div id="portfolio">
-                <div class="container">
-                    <h1 class="sub-title">My Work</h1>
-                    <div class="work-list">
-                        <div class="work">
-                         <img src="images/work-1.png" alt="">
-                          <div class="layer">
-                            <h3>Social Media App</h3>
-                            <p>The app connects you to the talented people around the world.
-                                Download it from play store.</p>
-                                <a href="#"><i class="fas fa-link ml-2"></i></a>
-                          </div>
-                        </div>
-                        <div class="work">
-                         <img src="images/work-2.png" alt="">
-                         <div class="layer">
-                            <h3>Music App</h3>
-                            <p>The app connects you to the talented people around the world.
-                                Download it from play store.</p>
-                                <a href="#"><i class="fas fa-link ml-2"></i></a>
-                          </div>
-                        </div>
-                        <div class="work">
-                         <img src="images/work-3.png" alt=""> 
-                         <div class="layer">
-                            <h3>Online Shopping App</h3>
-                            <p>The app connects you to the talented people around the world.
-                                Download it from play store.</p>
-                                <a href="https://mern-app-fullstack-2-gpwj.vercel.app"target="_blank" rel="noopener noreferrer"><i class="fas fa-link ml-2"></i></a>
-                          </div>
-                        </div>
-                    </div>
-                    <a href="https://github.com/ronniesamuel-star?tab=repositories" class="btn">See More</a>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work" data-aos="fade-up">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                    <a href="#"><i class="fas fa-link ml-2"></i></a>
                 </div>
-             </div>
-
-             <!--Contact section-->
-
-             <div id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fas fa-paper-plane"></i><a href="mailto:Samuelwagwale@gmail.com">samuelwagwale@gmail.com</a></p>
-                        <p> <i class="fas fa-phone-alt mr-2"></i><a href="tel:+256 762060111">+256 762060111</a></p>
-                        <div class="social-icons">
-                            <a href="https://facebook.com/"> <i class="fab fa-facebook-f"></i></a>
-                            <a href=""> <i class="fab fa-twitter"></i></a>
-                            <a href=""> <i class="fab fa-instagram"></i></a>
-                            <a href=""> <i class="fab fa-linkedin"></i></a>
-                            <a href="https://wa.me/762060111" target="_blank"> <i class="fab fa-whatsapp"></i></a>
-                        </div>
-                        
-                          <a href="images/my cv.txt" download class="btn btn2">Download CV</a>
-                        </div>
-                        <div class="contact-right">
-                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name"required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                                <button type="submit" class="btn btn2">submit</button>
-                     </form>
-                     <span id="msg"></span>
-                        </div>
-                    </div>
+            </div>
+            <div class="work" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                    <a href="#"><i class="fas fa-link ml-2"></i></a>
                 </div>
-                <div class="copyright">
-                    <p>copyright &copy Ronnie. Made with  <i class="fa fa-heart-o"></i> by Ronict-Solutions</p>
+            </div>
+            <div class="work" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/work-3.png" alt=""> 
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                    <a href="https://mern-app-fullstack-2-gpwj.vercel.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-link ml-2"></i></a>
                 </div>
-             </div>
-                    <script>
+            </div>
+        </div>
+        <a href="https://github.com/ronniesamuel-star?tab=repositories" class="btn">See More</a>
+    </div>
+</div>
 
-                        var tablinks = document.getElementsByClassName("tab-links");
-                        var tabcontents = document.getElementsByClassName("tab-contents");
-                
-                        function opentab(tabname){
-                            for(tablink of tablinks){
-                                tablink.classList.remove("active-link");
-                            }
-                            for(tabcontent of tabcontents){
-                                tabcontent.classList.remove("active-tab");
-                            }
-                            event.currentTarget.classList.add("active-link");
-                            document.getElementById(tabname).classList.add("active-tab")
-                        }
-                
-                    </script>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left" data-aos="fade-right">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i><a href="mailto:Samuelwagwale@gmail.com">samuelwagwale@gmail.com</a></p>
+                <p> <i class="fas fa-phone-alt mr-2"></i><a href="tel:+256 762060111">+256 762060111</a></p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/762060111" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <a href="images/my cv.txt" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right" data-aos="fade-left">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy Ronnie. Made with <i class="fa fa-heart-o"></i> by Ronict-Solutions</p>
+    </div>
+</div>
 
-                    <script>
-                         var sidemenu = document.getElementById("sidemenu")
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-                         function openmenu(){
-                            sidemenu.style.right = "0";
-                         }
-                         function closemenu(){
-                            sidemenu.style.right = "-200px";
-                         }
-                    </script>
-                    <script>
-                        const scriptURL = 'https://script.google.com/macros/s/AKfycbzS5lxRrcYIdklD-XpUDEFQS4pV48s519inMhMAE5Fv8KI0n65eVfLumWryO7_CQB-emQ/exec'
-                        const form = document.forms['submit-to-google-sheet']
-                        const msg = document.getElementById("msg")
-                      
-                        form.addEventListener('submit', e => {
-                          e.preventDefault()
-                          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                            .then(response => {
-                                msg.innerHTML = "Message sent successfully"
-                                setTimeout(function(){
-                                    msg.innerHTML = ""
-                                },5000)
-                                form.reset()
-                            })
-                            .catch(error => console.error('Error!', error.message))
-                        })
-                      </script>
-                </body>
-                </html>              
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzS5lxRrcYIdklD-XpUDEFQS4pV48s519inMhMAE5Fv8KI0n65eVfLumWryO7_CQB-emQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: false
+    });
+</script>
+
+</body>
+</html>
