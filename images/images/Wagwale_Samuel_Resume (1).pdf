@@ -1,1 +1,49 @@
 
+Wagwale Samuel - Resume  
+Wagwale Samuel  
+Phone: 0762060111 | Location: Mbale, Uganda  
+Email: samuelwagwale@gmail.com  
+GitHub: github.com/ronniesamuel-star  
+Portfolio: ronniesamuel-star.github.io/ronnie  
+Profile Summary  
+Motivated and passionate software engineering student with hands-on experience in building web 
+applications using modern technologies like React, Node.js, and MongoDB. Committed to writing 
+clean, efficient code and eager to contribute to dynamic development teams.  
+Skills  
+Frontend: HTML, CSS, JavaScript, React.js  
+Backend: Node.js, MongoDB  
+Version Control: Git & GitHub  
+Other Tools: Vercel, GitHub Pages  
+Education  
+Uganda Institute of Information and Communications Technology (UICT)  
+Diploma in Software Engineering  
+Projects  
+1. 
+School Website 
+https://school-website-mainmain-main.vercel.app  
+Built a responsive, modern school website using React and Tailwind CSS.  
+2. 
+University Front Website 
+https://university-frontwebsite-main.vercel.app  
+Developed a university website interface with interactive pages and reusable components.  
+3. 
+Personal Portfolio 
+https://ronniesamuelstar.github.io/ronnie  
+Showcases my skills, projects, and experience in a responsive personal portfolio site.  
+4. 
+MERN Stack App 
+https://mern-app-ronnie-f.vercel.app  
+A full-stack application using MongoDB, Express, React, and Node.js demonstrating CRUD operations 
+and authentication.  
+5. Django project  
+https://student-management-system-part-3-master.onrender.com  
+A full school management system using django where datases is stored on sqlite  
+An admin in able to add staff and sudents and when the student is registered the logs in he/she is 
+redirected  
+to the student dashboard while the teacher is being redirected to the teacher dashboard. the teacher 
+is able to add the students marks and when the student logs in to his/her account they are able to see 
+their results   
+while the admin can access both the staff and student dashboard but the student and teacher can not 
+see the admin dashboard .  
+the admin sees the marks of students, the total number of the staff members , student's fees, add the 
+members, and students and more.  ---  
